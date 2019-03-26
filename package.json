@@ -5,7 +5,9 @@
   "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
-    "debug": "DEBUG=* npx eleventy"
+    "debug": "DEBUG=* npx eleventy",
+    "serve": "browser-sync start --server '_site' --files '_site' ",
+    "start": "npm run watch & npm run serve"
   },
   "repository": {
     "type": "git",

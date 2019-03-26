@@ -7,9 +7,10 @@ navtitle: Home
 tags:
   - nav
 ---
-# Welcome to my portfolio
+# Welcome to My Portfolio
 
-Porfolio
-
+* Porfolio
+* Github
+* [Admin](/admin)
 
 
