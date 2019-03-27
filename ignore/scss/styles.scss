@@ -51,6 +51,14 @@ footer {
   color: var(--white);
 }
 
+footer {
+  a {
+    display: inline-block;
+    padding-right: 1rem;
+    opacity: 0.5;
+  }
+}
+
 main {
   padding-bottom: 2em;
 }
@@ -193,5 +201,8 @@ button {
 
 .splash {
   background: url('/static/img/unsplash.jpg') no-repeat;
-  background-size: contain;
+  background-size: cover;
+  .title {
+    opacity: 0.2;
+  }
 }

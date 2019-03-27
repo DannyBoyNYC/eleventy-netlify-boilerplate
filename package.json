@@ -7,7 +7,7 @@
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=* npx eleventy",
     "serve": "browser-sync start --server '_site' --files '_site' ",
-    "sass": "sass  ignore/scss/styles.scss _includes/assets/inline.css --watch --source-map",
+    "sass": "sass  ignore/scss/styles.scss _includes/assets/css/inline.css --watch --source-map",
     "start": "npm run watch & npm run sass & npm run serve"
   },
   "repository": {

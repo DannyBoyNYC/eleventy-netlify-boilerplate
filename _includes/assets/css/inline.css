@@ -14,8 +14,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -49,6 +48,12 @@ main,
 footer {
   padding: 1em;
   color: var(--white);
+}
+
+footer a {
+  display: inline-block;
+  padding-right: 1rem;
+  opacity: 0.5;
 }
 
 main {
@@ -105,7 +110,7 @@ header nav li a[href]:not(:hover) {
   text-decoration: none;
 }
 
-header nav li a[data-current='current item'] {
+header nav li a[data-current="current item"] {
   font-weight: 700;
   text-decoration: underline;
 }
@@ -124,8 +129,8 @@ main > section > article > * {
 }
 
 /* Post Tags */
-a[rel='tag'],
-a[rel='tag']:visited {
+a[rel=tag],
+a[rel=tag]:visited {
   display: inline-block;
   vertical-align: text-top;
   text-transform: uppercase;
@@ -142,13 +147,13 @@ a[rel='tag']:visited {
   margin: 0 0.5em 0.5em 0;
 }
 
-a[rel='tag']:hover {
+a[rel=tag]:hover {
   border: 1px solid var(--blue);
   background-color: var(--blue);
   color: var(--white);
 }
 
-a[rel='tag']:last-child {
+a[rel=tag]:last-child {
   margin-right: 0;
 }
 
@@ -169,7 +174,7 @@ button {
   padding: 1em;
   margin-bottom: 1em;
   font-size: 1rem;
-  font-family: 'Avenir', 'Avenir Next', sans-serif;
+  font-family: "Avenir", "Avenir Next", sans-serif;
 }
 
 input,
@@ -189,9 +194,12 @@ button {
     font-size: 1.1rem;
   }
 }
-
-
 .splash {
-  background: url('/static/img/unsplash.jpg') no-repeat;
+  background: url("/static/img/unsplash.jpg") no-repeat;
   background-size: cover;
 }
+.splash .title {
+  opacity: 0.2;
+}
+
+/*# sourceMappingURL=inline.css.map */
