@@ -3,7 +3,7 @@
 
 	{% include "components/head.njk" %}
 
-	<body>
+	<body {% if pageclass %} class="{{ pageclass }}"{% endif %}>
 
 		<header>
 			<em>
