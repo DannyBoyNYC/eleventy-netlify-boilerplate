@@ -7,10 +7,8 @@ navtitle: Home
 tags:
   - nav
 ---
-# Welcome to My Protfolio
 
-* Porfolio
-* Github
-* [Admin](/admin)
+<img src="/static/img/title.svg" />
+
 
 
