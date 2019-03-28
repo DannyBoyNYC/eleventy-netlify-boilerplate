@@ -1,7 +1,20 @@
+// variables
+
+$break-five: 81.25em;
+// 1300px
+$break-four: 71.25em;
+// 1140
+$break-three: 61.25em;
+// 980
+$break-two: 46.25em;
+// 760
+$break-one: 22.5em;
+// 360
+
 :root {
-  --turkey: #fff0eb;
   --white: white;
-  --blue: #007eb6;
+  --blue2: #007eb6;
+  --blue: #13b8c0;
 }
 
 *,
@@ -48,11 +61,12 @@ header,
 main,
 footer {
   padding: 1em;
-  color: var(--white);
+  
 }
 
 footer {
   a {
+    color: var(--white);
     display: inline-block;
     padding-right: 1rem;
     opacity: 0.5;
@@ -115,7 +129,7 @@ header nav li a[href]:not(:hover) {
 
 header nav li a[data-current='current item'] {
   font-weight: 700;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 /* Posts List */
@@ -205,8 +219,8 @@ button {
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: 50% 50%, top left;
-  .title {
-    opacity: 0.5;
+  @media (min-width: $break-two){
+    background-position: 50% 50%, top left;
   }
 }
 

@@ -1,57 +1,69 @@
 :root {
-  --turkey: #fff0eb;
   --white: white;
-  --blue: #007eb6; }
+  --blue2: #007eb6;
+  --blue: #13b8c0;
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
 body {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background-color: var(--white); }
+  background-color: var(--white);
+}
 
 main {
-  max-width: 37.5em; }
+  max-width: 37.5em;
+}
 
 p,
 pre,
 code {
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
 a[href],
 a[href]:visited {
-  color: var(--blue); }
+  color: var(--blue);
+}
 
 a[href]:not(:hover) {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 header,
 main,
 footer {
   padding: 1em;
-  color: var(--white); }
+}
 
 footer a {
+  color: var(--white);
   display: inline-block;
   padding-right: 1rem;
-  opacity: 0.5; }
+  opacity: 0.5;
+}
 
 main {
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+}
 
 main :first-child,
 main > article :first-child {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 pre {
   font-size: 14px;
@@ -67,11 +79,13 @@ pre {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1em;
-  margin: 0.5em 0; }
+  margin: 0.5em 0;
+}
 
 ul {
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 /* Header Logo (style as h2) */
 header > em {
@@ -79,37 +93,44 @@ header > em {
   font-size: 2em;
   margin: 0.67em 0;
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+}
 
 /* Header Nav */
 header nav ul :first-child {
-  margin-left: 0; }
+  margin-left: 0;
+}
 
 header nav li {
   display: inline-block;
-  margin: 0 0.5em; }
+  margin: 0 0.5em;
+}
 
 header nav li a[href]:not(:hover) {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-header nav li a[data-current='current item'] {
+header nav li a[data-current="current item"] {
   font-weight: 700;
-  text-decoration: underline; }
+  text-decoration: underline !important;
+}
 
 /* Posts List */
 article {
   margin-bottom: 1em;
   padding-bottom: 1em;
   border-bottom: 1px solid #eee;
-  border-bottom: 1px solid var(--white); }
+  border-bottom: 1px solid var(--white);
+}
 
 main > section > article > * {
   margin-top: 0;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+}
 
 /* Post Tags */
-a[rel='tag'],
-a[rel='tag']:visited {
+a[rel=tag],
+a[rel=tag]:visited {
   display: inline-block;
   vertical-align: text-top;
   text-transform: uppercase;
@@ -123,23 +144,28 @@ a[rel='tag']:visited {
   color: var(--blue);
   border-radius: 0.25em;
   text-decoration: none;
-  margin: 0 0.5em 0.5em 0; }
+  margin: 0 0.5em 0.5em 0;
+}
 
-a[rel='tag']:hover {
+a[rel=tag]:hover {
   border: 1px solid var(--blue);
   background-color: var(--blue);
-  color: var(--white); }
+  color: var(--white);
+}
 
-a[rel='tag']:last-child {
-  margin-right: 0; }
+a[rel=tag]:last-child {
+  margin-right: 0;
+}
 
 /* Contact Form */
 form {
   display: grid;
-  padding: 2em 0; }
+  padding: 2em 0;
+}
 
 form label {
-  display: none; }
+  display: none;
+}
 
 input,
 textarea,
@@ -148,28 +174,37 @@ button {
   padding: 1em;
   margin-bottom: 1em;
   font-size: 1rem;
-  font-family: 'Avenir', 'Avenir Next', sans-serif; }
+  font-family: "Avenir", "Avenir Next", sans-serif;
+}
 
 input,
 textarea {
-  border: 1px solid black; }
+  border: 1px solid black;
+}
 
 button {
   border: 1px solid var(--blue);
   background-color: var(--blue);
   color: var(--white);
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 @media screen and (min-width: 768px) {
   :root {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem;
+  }
+}
 .splash {
   background-color: #000;
   background-image: url("/static/img/title2.svg"), url("/static/img/unsplash2.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%, top left; }
-  .splash .title {
-    opacity: 0.5; }
+  background-position: 50% 50%, top left;
+}
+@media (min-width: 46.25em) {
+  .splash {
+    background-position: 50% 50%, top left;
+  }
+}
 
 /*# sourceMappingURL=inline.css.map */
