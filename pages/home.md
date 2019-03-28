@@ -8,7 +8,4 @@ tags:
   - nav
 ---
 
-<img class="title" src="/static/img/title.svg" />
-
-
 

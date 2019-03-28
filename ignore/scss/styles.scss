@@ -200,9 +200,13 @@ button {
 
 
 .splash {
-  background: url('/static/img/unsplash.jpg') no-repeat;
-  background-size: cover;
+  background-color: #000;
+  background-image: url('/static/img/title2.svg'), url('/static/img/unsplash2.jpg');
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%, top left;
   .title {
-    opacity: 0.2;
+    opacity: 0.5;
   }
 }
+
